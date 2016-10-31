@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>UGA Clubs and Organizations</title>
+</head>
+<body>
+<h1>Student Clubs and Organizations</h1>
+<h2>Click on one of the options below.</h2>
+<h3>Select a club to view information about it</h3>
+<form action="ClubsServlet" method="POST">
+
+	<select name="clubName">
+		<option value= "">Select A Club or Organization</option>
+		<option value= "men's club basketball">Men's Club Basketball</option>
+		<option value= "aiesec">AIESEC</option>
+		<option value= "afga">Ambassadors for Global Awareness</option>
+		<option value= "asha">Asha For Education</option>
+		<option value= "bdc">Ballroom Dance Club</option>
+		<option value= "budokai">Budokai</option>
+		<option value= "cine club">Cine Club</option>
+		<option value= "deca">DECA</option>
+		<option value= "dluga">Donate Life UGA</option>
+		<option value= "end it">End It Movement at UGA</option>
+		<option value= "gdt">Georgia Dance Team</option>
+		<option value= "uga heros">UGA HEROs</option>
+		<option value= "impact">IMPACT Service Breaks</option>
+		<option value= "ice">Indian Cultural Exchange</option>
+		<option value= "mgmt society">Management Society</option>
+		<option value= "nw">Noteworthy</option>
+	</select>	
+	
+	<input type="submit" value="Submit" />
+</form>
+
+</body>
+</html>
