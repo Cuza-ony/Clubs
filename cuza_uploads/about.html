@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>clubs</title>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> 
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<!--  to use jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+<!-- Custom JQuery and JS Scripts -->
+<script src="jquery.js"></script>
+<script src="user.js"></script>
+
+<!-- for drop down -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+<!-- auto-complete styling -->
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<!--  <link rel="stylesheet" href="/resources/demos/style.css">  -->
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<!-- Custom CSS -->
+<link rel="stylesheet" href="about.css">
+</head>
+
+<body>
+	<!-- Navigation Bar -->
+	<nav class="navbar navbar-inverse" id="nav-top">
+		<div class="container-fluid">
+		
+			<!-- Nav Bar Header: Links to Profile Page -->
+			<div class="navbar-header">
+				<a href="user.html" class="navbar-brand">Athens Student Involvement</a>
+			</div>
+			
+			<!-- Nav Bar Items -->
+			<div>
+				<ul class="nav navbar-nav">
+					<li><a href="user.html">Home</a></li>
+					<li><a href="#">MyProfile</a></li>
+					<li class="active"><a href="about.html">About</a></li>
+					
+					<!-- Drop down menu in Nav bar -->
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Update <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="interests.html">Interests</a></li>
+							<li><a href="#">Clubs</a></li>
+							<li><a href="#">Events</a></li>
+						</ul>
+					</li>
+				</ul>
+				
+				<!-- logout option: right align -->
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#">Logout</a></li>
+				</ul>
+			</div>
+			
+		</div>
+	</nav>
+	
+	<!-- About Us Header -->
+	<div id="header">
+		<h1><span id="about">About </span><span id="us">Us</span></h1><br/> 
+	</div>
+	
+	<!-- Links within page -->
+	<div id="page-links">
+		<p class="link"><a href="#about-site" class="link2">About The Site</a></p>
+		<p class="link"><a href="#cuza" class="link2">Cuza</a></p>
+		<p class="link"><a href="#nikki" class="link2">Niki</a></p>
+		<p class="link"><a href="#parth" class="link2">Parth</a></p>
+		<p class="link"><a href="#tamami" class="link2">Tamami</a></p>
+		<p class="link"><a href="#tech" class="link2">Web Framework Technologies</a></p>
+	</div>
+	<hr id="links-hor">
+	
+	<!-- Content -->
+	<div id="content">
+	<h3 id="about-site">About The <span class="red">Site </span></h3><br/>
+	<p>This site allows students to easily search clubs and events on campus that directly relate to their 
+	interests. Students can make changes to their interests, clubs they are interested in, events they would like to 
+	attend and search for clubs directly. 
+	</p> 
+	<p>Clubs can use this site to provide details about their student organization including a bio of what they do and 
+	upcoming events. Clubs can also make it easy for student to search for them or their events by using tags for students
+	to search.</p>
+	<br/><span class="top-page"><a href="#nav-top">Top</a></span><hr class="content-hor">
+	
+	<h3 id="cuza">Cuza</h3>
+	<p>Framework Development</p>
+	<ul>
+		<li>Bootstrap Grid Layout</li>
+		<li>Bootstrap Navigation bar</li>
+	</ul>
+	<p>Pages</p>
+	<ul>
+		<li>Created Mock-ups for page UI</li>
+		<li>Landing Page for Users (HTML and CSS)</li>
+		<li>About Page (HTML and CSS)</li>
+		<li>Landing Page for Student Organizations (HTML and CSS)</li>
+	</ul>
+	<p>Functionality</p>
+	<ul>
+		<li>Search Bar Auto-complete using JQuery</li>
+		<li>JQuery Functionality: 
+			<ul>
+				<li>clubs.js</li>
+				<li>index.js</li>
+			</ul>
+		</li>
+	</ul>
+	<p>Database</p>
+	<span class="top-page"><a href="#nav-top">Top</a></span><hr class="content-hor">
+	
+	<h3 id="nikki">Nikki</h3>
+	<span class="top-page"><a href="#nav-top">Top</a></span><hr class="content-hor">
+	
+	<h3 id="parth">Parth</h3>
+	<span class="top-page"><a href="#nav-top">Top</a></span><hr class="content-hor">
+	
+	<h3 id="tamami">Tamami</h3>
+	<p>Pages</p>
+	<ul>
+		<li>Login and Register Page (HTML and CSS)</li>
+	</ul>
+	<p>Functionality</p>
+	<ul>
+		<li>JQuery Functionality: 
+			<ul>
+				<li>Login and Register Page</li>
+			</ul>
+		</li>
+	</ul>
+	<p>Database</p>
+	<span class="top-page"><a href="#nav-top">Top</a></span><hr class="content-hor">
+	
+	<h3 id="tech">Web Framework <span class="red">Technologies</span></h3>
+	<p>Framework and Creating Pages</p>
+	<ul>
+		<li>Bootstrap</li>
+		<li>HTML</li>
+		<li>CSS</li>
+	</ul>
+	<p>Functionality</p>
+	<ul>
+		<li>JQuery / JS</li>
+		<li>AJAX</li>
+	</ul>
+	<p>Database</p>
+	<ul>
+		<li>SQL</li>
+	</ul>
+	<span class="top-page"><a href="#nav-top">Top</a>
+	 
+	</div>
+	
+	
+</body>
+</html>
+
+
+
+
+
+

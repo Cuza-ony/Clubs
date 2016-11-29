@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>clubs</title>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> 
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<!--  to use jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+<!-- Custom JQuery and JS Scripts -->
+<script src="jquery.js"></script>
+<script src="clubs.js"></script>
+<script src="user.js"></script>
+
+<!-- for drop down -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+<!-- Custom CSS -->
+<link rel="stylesheet" href="clubs.css">
+<!-- auto-complete styling -->
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<!--  <link rel="stylesheet" href="/resources/demos/style.css">  -->
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+</head>
+
+<body>
+	<!-- Navigation Bar -->
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+		
+			<!-- Nav Bar Header: Links to Profile Page -->
+			<div class="navbar-header">
+				<a href="user.html" class="navbar-brand">Athens Student Involvement</a>
+			</div>
+			
+			<!-- Nav Bar Items -->
+			<div>
+				<ul class="nav navbar-nav">
+					<li><a href="user.html">Home</a></li>
+					<li><a href="#">MyProfile</a></li>
+					<li><a href="about.html">About</a></li>
+					
+					<!-- Drop down menu in Nav bar -->
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Updates<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="interests.html">Interests</a></li>
+							<li><a href="#">Clubs</a></li>
+							<li><a href="#">Events</a></li>
+						</ul>
+					</li>
+				</ul>
+				
+				<!-- logout option: right align -->
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#">Logout</a></li>
+				</ul>
+			</div>
+			
+		</div>
+	</nav>
+	
+	<!-- Welcome Panel -->
+	<div class="panel panel-default">
+ 		 <div class="panel-body"><span id="welcome">Welcome To</span><br><span id="name">IEEE</span></div>
+	</div>
+	
+	<!-- Search Bar --> <!--  
+	<div id="style-search">
+  		<input id="search" type="text" name="search" placeholder="Search ...">
+  		<button id= search-button type="submit">
+        	<span class="glyphicon glyphicon-search"></span>
+        </button> 
+	</div> -->
+	
+	<!-- Grid Layout: for contents -->
+	<div>
+	
+	</div>
+	<div class="container-fluid">
+		<div class="row">
+			<!-- Events -->
+			<div class="col-md-4 right">Upcoming Events
+				<div class="row">
+					<div id="events" class="col-md-12"> No events added</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+	
+	
+	
+</body>
+</html>
+
+
+
+
+
+
