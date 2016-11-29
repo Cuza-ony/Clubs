@@ -1,0 +1,107 @@
+.panel, .panel-default{
+	background-color: lightblue;
+	border-radius: 0px;
+	text-align: center;
+	margin-left: 5%;
+	margin-right: 5%;
+	width: 90%;
+	height: 115px;
+	font-size: 30px;
+	font-weight: bold;
+	letter-spacing: 0.1em;
+	font-family: Impact, Charcoal, sans-serif;
+	text-shadow: 2px 2px 4px #000000;
+	background-image: url("http://multimedia.uga.edu/media/images/TrialGardenBlooms.jpg");
+}
+#welcome{
+	color: white;
+}
+#name{
+	color: #e60000;
+}
+input[type=text] {
+    width: 225px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 2px;
+    font-size: 16px;
+    background-color: white; 
+    padding-top: 12px;
+    padding-bottom:12px;
+    padding-right:20px;
+    padding-left: 20px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    margin-top: 20px ;
+}
+input[type=text]:focus {
+    width: 88%; 
+}
+#search-button{
+	padding-top:12px;
+	padding-bottom:12px;
+	margin-top: 20px;
+	margin-bottom: 35px;
+	background-color: lite-grey;
+	border: 0;
+	border: 2px solid #ccc;
+    border-radius: 2px;
+
+}
+.col-md-4{
+	background-color: #e60000;
+	margin-top: 20px;
+	width:26%;
+	margin-left:5%;
+	margin: auto;
+	display: inline-block; 
+	height: 40px; 
+	color: white;
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+	text-shadow: 1.3px 1.3px 1.3px #000000;
+	padding-top: 4px;
+}
+#interests,#clubs,#events{
+	background-color: white;
+	border: 1.7px solid black;
+	padding-top:4px;
+	margin-top: 12px;
+	color: black;
+	text-align: left;
+	font-size: 17px;
+	font-weight: normal;
+	text-shadow: none;
+}
+
+.left{
+	margin-left: 5%;
+	margin-right: 6%;
+}
+.middle{
+	margin-right:6%
+}
+.right{
+	margin-right: 5%;
+}
+
+#style-search{
+	margin-left:5%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
