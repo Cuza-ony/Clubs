@@ -1,39 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html >
 <head>
-<meta charset="ISO-8859-1">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>clubs</title>
+  <meta charset="UTF-8">
+  <title>Flat Login Form</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<!-- JQuery and JS Scripts -->
-<script src="jquery.js"></script>
-<script src="userProfilePage.js"></script>
+  <link rel='stylesheet prefetch' href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900'>
+<link rel='stylesheet prefetch' href='http://fonts.googleapis.com/css?family=Montserrat:400,700'>
+<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
 
+      <link rel="stylesheet" href="css/style.css">
+      <script src="newUser.js"></script>
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-<link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-
-<!-- CSS -->
-<link rel="stylesheet" href="index.css">
-<!-- needed for auto-complete -->
-<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-<link rel="stylesheet" href="/resources/demos/style.css">
-<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-
+  
 </head>
 
 <body>
-	<!-- Navigation Bar -->
-	<nav class="navbar navbar-inverse">
+   <nav class="navbar navbar-inverse">
 		<div class="container-fluid">
 		
 			<!-- Nav Bar Header: Links to Profile Page -->
@@ -44,71 +30,57 @@
 			<!-- Nav Bar Items -->
 			<div>
 				<ul class="nav navbar-nav">
-					<li class="active"><a href="#">MyProfile</a></li>
-					<li><a href="#">About</a></li>
 					
-					<!-- Drop down menu in Nav bar -->
-					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Update <span class="caret"></span></a>
-						<ul class="dropdown-menu">
-							<li><a href="#">Interests</a></li>
-							<li><a href="#">Clubs</a></li>
-							<li><a href="#">Events</a></li>
-						</ul>
-					</li>
-				</ul>
-				
-				<!-- logout option: right align -->
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#">Logout</a></li>
-				</ul>
+					
+                    <!-- right align -->
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">About Us</a></li>
+                    </ul>
+                </ul>
 			</div>
 			
 		</div>
 	</nav>
-	
-	<!-- Welcome Panel -->
-	<div class="panel panel-default">
- 		 <div class="panel-body"><span id="welcome">Welcome!</span><br><span id="name">Cuza Onyeagba</span></div>
-	</div>
-	
-	<!-- Search Bar -->
-	<div>
-  		<input id="search" type="text" name="search" placeholder="Search ...">
-  		<button id= search-button type="submit">
-        	<span class="glyphicon glyphicon-search"></span>
-        </button> 
-	</div>
-	
-	<!-- Grid Layout: for contents -->
-	<div class="container-fluid">
-		<div class="row">
-			<!-- Interests -->
-			<div class="col-md-4">Your Interests
-				<div class="row">
-					<div id="interests" class="col-md-12"> You Have No Interests</div>
-				</div>
-			</div>
-			<!-- Clubs -->
-			<div class="col-md-4">Your Clubs
-				<div class="row">
-					<div id="clubs" class="col-md-12"> You Have No clubs</div>
-				</div>
-			</div>
-			<!-- Events -->
-			<div class="col-md-4">Your Events
-				<div class="row">
-					<div id="events" class="col-md-12"> You Have No Events</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	
+  
+  
+<div class="container">
+  <div class="info">
+    <h1> Login</h1>
+  </div>
+</div>
+<div class="form" action="newUserServlet" method = "post">
+
+     
+  <div class="thumbnail"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/UGA_logo.svg/2000px-UGA_logo.svg.png"/></div>
+    
+    <!--- Start of register form -->
+  <form class="register-form" action="newUserServlet" method = "post">
+      
+    <input type="text" id= "firstname" name = "firstname" placeholder="first name"/>
+    <input type="text" id= "lastname" name = "lastname" placeholder="last name"/>
+    <input type="text" id= "year" name = "year" placeholder="year"/>
+    <input type="text" id= "gender" name = "gender" placeholder="gender"/>
+    <input type="text" id= "username" name = "username" placeholder="username"/>
+    <input type="password" id= "password" name = "password" placeholder="password"/>
+    <input type="text" id= "email" name = "emai" placeholder="email address"/>
+    
+    <input type="submit" class="button" value="Sign Up" onsubmit="return validate();">
+    <p class="message">Already registered? <a href="#">Sign In</a></p>
+  </form>
+    
+<!--- Start of login form -->    
+  <form class="login-form" action="loginServlet" method = "post">
+    <input type="text" id= "username" name = "username" placeholder="username"/>
+    <input type="password"  id= "password" name = "password" placeholder="password"/>
+    <button>log In</button>
+    
+    <p class="message">Not registered? <a href="#">Create an account</a></p>
+  </form>
+</div>
+
+ <!--- animation for switching from one page to another. -->    
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src="js/index.js"></script>
+
 </body>
 </html>
-
-
-
-
-
-
