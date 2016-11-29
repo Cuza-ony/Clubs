@@ -1,0 +1,46 @@
+#header{
+	text-align: center;
+	text-decoration: underline;
+}
+#about{
+	color:black;
+	font-size:125%;
+}
+#us{
+	color:#e60000;
+	font-size:125%;
+}
+#page-links >p > a{
+	margin-left: 4%;
+	color: black;
+	text-decoration: underline;
+}
+#page-links{
+	text-align:center;
+	margin: auto;
+}
+.link{
+	display:inline; 
+}
+.link2:hover{ 
+    background-color: #e60000;
+    font-size: 18px;
+}
+#content{
+	margin-left:15%;
+	margin-right:15%; 
+}
+#links-hor{
+	border-top: 1px solid #ccc;
+}
+.content-hor{
+	border-top: 1px solid #808080;
+}
+.red{
+	color:#e60000;
+}
+.top-page{
+	font-size: 10px;
+	color: #8080ff;
+	text-decoration: underline; 
+}
