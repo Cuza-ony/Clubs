@@ -1,0 +1,12 @@
+package persistlayer;
+/*
+ * Includes all the variables (with proper values) required to connect to the database 
+ */
+
+public abstract class DbAccessConfiguration {
+	public static final String DB_DRIVE_NAME ="com.mysql.jdbc.Driver";
+	public static final String DB_CONNECTION_URL = "jdbc:mysql://localhost:3306/club";
+	public static final String DB_CONNECTION_USERNAME="root";
+	public static final String DB_CONNECTION_PASSWORD="root";	
+}
+
