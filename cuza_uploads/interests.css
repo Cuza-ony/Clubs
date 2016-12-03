@@ -1,14 +1,67 @@
+input[type="checkbox"] {
+    width:25px;
+    height:20px;
+    padding: 0;
+ 	margin:0;
+  	vertical-align: bottom;
+  	position: relative;
+  	top: -3px;
+}
 #header{
 	text-align: center;
-	text-decoration: underline;
 }
-#title1{
-	color:black;
+h3{
+	color: #e60000;
+	font-weight: bold;
+}
+p{
+	font-weight: bold;
+	color: black;
+	font-size: 15px;
+	text-style: italic; 	
+	font-style: italic;
+}
+#submitButton{
 	text-align: center;
-	text-decoration: underline;
+	color: white;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	width: 20%;
+	margin-left: 40%;
+	border: 1px solid black;
+	height: 30px;
+	background-color: #00cccc;
 }
-#text-only{
-	background-color: #e60000;
+.inputs{
+	text-align: left;
+	padding-left: 2%;
+	padding-bottom: 2%;
+	margin: auto;
+	width: 50%;
+}
+#interests{
+	margin-left: 13%;
+	margin-right:13%;
+	border-style: solid;
+    border-width: 8px;
+	text-align: center;
+}
+#curr{
+	font-size: 20px;
+	margin-left: 9%;
+	margin-right: 9%;
+	border-style: solid;
+    border-width: 2px;
+}
+#new{
+	font-size: 20px;
+	margin-left: 9%;
+	margin-right: 9%;
+	border-style: solid;
+    border-width: 2px;
+}
+#clear{
+	visibility: hidden;
 }
 #about{
 	color:black;
@@ -18,37 +71,6 @@
 	color:#e60000;
 	font-size:125%;
 }
-#page-links >p > a{
-	margin-left: 4%;
-	color: black;
-	text-decoration: underline;
-}
-#page-links{
-	text-align:center;
-	margin: auto;
-}
-.link{
-	display:inline; 
-}
-.link2:hover{ 
-    background-color: #e60000;
-    font-size: 18px;
-}
-#content{
-	margin-left:15%;
-	margin-right:15%; 
-}
-#links-hor{
-	border-top: 1px solid #ccc;
-}
 .content-hor{
 	border-top: 1px solid #808080;
-}
-.red{
-	color:#e60000;
-}
-.top-page{
-	font-size: 10px;
-	color: #8080ff;
-	text-decoration: underline; 
 }

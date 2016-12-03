@@ -11,7 +11,7 @@ function welcomePanel(){
 	    var temp = parameters[0].split("=");
 	    var message = unescape(temp[1]);
 	    message = message.replace(/\+/g, " ");
-	    $("#name").html(message);
+	    $("#n").html(message);
 }
 
 

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Flat Login Form</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <link rel='stylesheet prefetch' href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900'>
+<link rel='stylesheet prefetch' href='http://fonts.googleapis.com/css?family=Montserrat:400,700'>
+<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+ 
+ <!--- animation for switching from one page to another. -->  
+ <script src="jquery.js"></script>
+    <script src="index.js"></script>  
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  	
+
+  
+</head>
+
+<body>
+   <nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+		
+			<!-- Nav Bar Header: Links to Profile Page -->
+			<div class="navbar-header">
+				<a href="#" class="navbar-brand">Athens Student Involvement</a>
+			</div>
+			
+			<!-- Nav Bar Items -->
+			<div>
+				<ul class="nav navbar-nav">
+					
+					
+                    <!-- right align -->
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">About Us</a></li>
+                    </ul>
+                </ul>
+			</div>
+			
+		</div>
+	</nav>
+  
+  
+<div class="container">
+  <div class="info">
+    <h1> Login</h1>
+  </div>
+</div>
+<div class="form" >
+
+     
+ <div class="thumbnail"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/UGA_logo.svg/2000px-UGA_logo.svg.png"/></div>
+    
+    <!--- Start of register form -->
+  <form action="" method = "" class="register-form">
+      
+    <input type="text" id= "firstname" name = "firstname" placeholder="first name"/>
+    <input type="text" id= "lastname" name = "lastname" placeholder="last name"/>
+    <input type="text" id= "year" name = "year" placeholder="year"/>
+    <input type="text" id= "gender" name = "gender" placeholder="gender"/>
+    <input type="text" id= "username" name = "username" placeholder="username"/>
+    <input type="password" id= "password" name = "password" placeholder="password"/>
+    <input type="text" id= "email" name = "emai" placeholder="email address"/>
+    
+    <input type="submit" class="button" value="Sign Up" onsubmit="return validate();">
+    <p class="message">Already registered? <a href="#">Sign In</a></p>
+  </form>
+    
+<!--- Start of login form -->    
+  <form action="Servlet" method="GET" class="login-form" >
+    <input type="text" id= "username" name = "u" placeholder="username"/>
+    <input type="password"  id= "password" name = "p" placeholder="password"/>
+    <input type="submit" value="Log In" name="submit" id="login"/>
+    <p class="message">Not registered? <a href="#">Create an account</a></p>
+  </form>
+</div>
+
+
+</body>
+</html>
