@@ -46,14 +46,21 @@ public class Servlet extends HttpServlet {
 		 }
 		 //if request is being sent from interest page
 		 else if(request.getParameter("p") != null && request.getParameter("p").equals("interests")){
+			 //get list of all interests
+			 query = persist.interestList();
+			 query += "{.split}";//to know how to separate the string
+			 //get list of only the user's interest
+			 query += persist.userInterestList(usernameCopy);
 			 response.setContentType("text/html");
 			 PrintWriter out = response.getWriter();
-			 out.println("p parameter is not null"); 
+			 out.println(query); 
+			 //clear out query to start over
+			 query = "";
 		 }
 		 //request is sent from user landing page
 		 else if(request.getParameter("p") != null && request.getParameter("p").equals("user")){
 			//find user full name after successful login
-			 query += persist.findUserFullName(usernameCopy);
+			 query = persist.findUserFullName(usernameCopy);
 			 query += "{.split}";//to know how to separate the string
 			 //find user interests
 			 query += persist.findUserInterests(usernameCopy);
