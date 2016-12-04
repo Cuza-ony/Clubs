@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>clubs</title>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> 
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<!--  to use jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+<!-- Custom JQuery and JS Scripts -->
+<script src="jquery.js"></script>
+<script src="events.js"></script>
+
+<!-- for drop down -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+<!-- auto-complete styling -->
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<!-- Custom CSS -->
+<link rel="stylesheet" href="interests.css">
+</head>
+
+<body>
+	<!-- Navigation Bar -->
+	<nav class="navbar navbar-inverse" id="nav-top">
+		<div class="container-fluid">
+		
+			<!-- Nav Bar Header: Links to Profile Page -->
+			<div class="navbar-header">
+				<a href="user.html" class="navbar-brand">Athens Student Involvement</a>
+			</div>
+			
+			<!-- Nav Bar Items -->
+			<div>
+				<ul class="nav navbar-nav">
+					<li><a href="user.html">Home</a></li>
+					<li><a href="#">MyProfile</a></li>
+					<li><a href="about.html">About</a></li>
+					
+					<!-- Drop down menu in Nav bar -->
+					<li class="dropdown active">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Update <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Interests</a></li>
+							<li><a href="clubs.html">Clubs</a></li>
+							<li class="active"><a href="events.html">Events</a></li>
+						</ul>
+					</li>
+				</ul>
+				
+				<!-- logout option: right align -->
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#">Logout</a></li>
+				</ul>
+			</div>
+			
+		</div>
+	</nav>
+	
+	<!-- Main Header -->
+	<div id="header">
+		<h1><span id="about">Your </span><span id="us">Events</span></h1>
+	</div>
+	<hr id="links-hor">
+	
+	<!-- Hold Events Contents -->
+	<form action="Servlet" method="GET">
+		<div id="events">
+			<!-- Current Events -->
+			<h3>Current Events</h3>
+			<div id="curr">
+				<p>Select Current Events to Delete</p>
+				<div class="inputs" id="currArea"></div>
+			</div>
+			<!-- list of all Events -->
+			<h3>Find New Events</h3>
+			<div id="new">
+				<p>Select New Events to Add</p>
+				<div class="inputs" id="newArea"></div>
+			</div>
+			<h2 id="clear">Not To Be Seen</h2>
+		</div>
+		<input type="submit" value="Submit" id="submitButton">
+	</form>
+	
+</body>
+</html>
+
