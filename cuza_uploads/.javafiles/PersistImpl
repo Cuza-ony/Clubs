@@ -30,15 +30,33 @@ public class PersistImpl {
 	
 	/* Query Result = User's interests */
 	public String findUserInterests(String username){
-		String query = "SELECT interest FROM student_interest join user_info u where u.username="+"'"+username.toLowerCase()+"'";
+		String query = "SELECT interest FROM student_interest s join user_info u on s.id_student=u.student_id where username='"+username.toLowerCase()+"'";
 		ResultSet rset = db.retrieve(con, query); //execute query
 		return logic.getresults(rset);
 	}
 	
 	/* Query Result = User's clubs */
 	public String findUserClubs(String username){
-		String query = "SELECT club FROM student_club s join user_info u where u.username="+"'"+username.toLowerCase()+"'";
+		String query = "SELECT club FROM student_club s join user_info u on s.id_student=u.student_id where u.username="+"'"+username.toLowerCase()+"'";
 		ResultSet rset = db.retrieve(con, query); //execute query
 		return logic.getresults(rset);
 	}
+	
+	/*Get all interests and create check-box form*/
+	public String interestList(){
+		String query = "SELECT tag FROM tags";
+		ResultSet rset = db.retrieve(con, query);
+		return logic.createFormCheckBox(rset);
+	}
+	
+	/*Get user's intersts and create check-box form*/
+	public String userInterestList(String username){
+		String query = "SELECT interest FROM student_interest s join user_info u on s.id_student=u.student_id where username='"+username.toLowerCase()+"'";
+		ResultSet rset = db.retrieve(con, query);
+		return logic.createFormCheckBox(rset);
+	}
 }//class
+
+
+
+
