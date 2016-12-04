@@ -9,6 +9,6 @@ function showEvents(info){
 	value = info; 
     valueParts = value.split("{.split}");
     //place html in there proper places on page
-    $("#newArea").html(valueParts[0]);
-    $("#currArea").html(valueParts[1]);
+    $("#newArea2").html(valueParts[0]);
+    $("#currArea2").html(valueParts[1]);
 }

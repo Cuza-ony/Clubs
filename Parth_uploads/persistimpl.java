@@ -57,7 +57,7 @@ public class PersistImpl {
 	}
     /*Get all clubs and create check-box form*/
 	public String clubList(){
-		String query = "SELECT tag FROM tags";
+		String query = "SELECT name FROM clubs";
 		ResultSet rset = db.retrieve(con, query);
 		return logic.createFormCheckBox(rset);
 	}
@@ -65,6 +65,13 @@ public class PersistImpl {
 	/*Get user's clubs and create check-box form*/
 	public String userClubList(String username){
 		String query = "SELECT club FROM student_club s join user_info u on s.id_student=u.student_id where username='"+username.toLowerCase()+"'";
+		ResultSet rset = db.retrieve(con, query);
+		return logic.createFormCheckBox(rset);
+    }
+	
+	/*Get user's events and create check-box form*/
+	public String userEventList(String username){
+		String query = "SELECT student_club.club, meetings.title, meetings.description FROM meetings INNER JOIN `meetings` on student_club.id_club = meetings.club_id where username='"+username.toLowerCase()+"'";
 		ResultSet rset = db.retrieve(con, query);
 		return logic.createFormCheckBox(rset);
 	}
