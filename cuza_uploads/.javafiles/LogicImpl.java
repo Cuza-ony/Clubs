@@ -10,7 +10,6 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 public class LogicImpl {
-	ArrayList<String> genreHTML = new ArrayList<String>();
 	ArrayList<String> html = new ArrayList<String>();
 	String queryResultString = " ";
 	String set ="";
@@ -52,4 +51,39 @@ public class LogicImpl {
 		return set;
 	}
 	
+	public String createFormCheckBox(ResultSet rset) {
+		html.clear();
+		try {
+			ResultSetMetaData rMeta = rset.getMetaData();
+			int amount = rMeta.getColumnCount();
+			while(rset.next()){
+				for(int i=1; i<amount+1; i++){
+					html.add("<input type=\"checkbox\" name=\""+"delete"+"\" value=\""+rset.getString(i)+"\""+">"+" "+rset.getString(i)+"<br/>");
+				}
+				html.add("\n");
+			}//while
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return tableString(html);	
+	}//genreTable
+	
+	private String tableString (ArrayList<String> list){
+        Iterator it = list.iterator();
+        queryResultString = "";
+		while(it.hasNext()){
+			queryResultString += it.next() + "\n";
+		}
+		return queryResultString;
+	}//tableString
+	
 }//class
+
+
+
+
+
+
+
+
+
