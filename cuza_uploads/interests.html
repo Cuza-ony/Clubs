@@ -75,30 +75,19 @@
 	<hr id="links-hor">
 	
 	<!-- Hold Interest Contents -->
-	<form>
+	<form action="Servlet" method="GET">
 		<div id="interests">
 			<!-- Current Interests -->
 			<h3>Current Interests</h3>
 			<div id="curr">
 				<p>Select Current Interests to Delete</p>
-				<div id=".squaredFour">
-				<div class="inputs">
-					<input type="checkbox" name="delete" value="Technology"> Technology<br/>
-					<input type="checkbox" name="delete" value="Art" > Art<br/>
-					<input type="checkbox" name="delete" value="Medical"> Art<br/>
-				</div>
-				</div>
+				<div class="inputs" id="currArea"></div>
 			</div>
-			
 			<!-- list of all interests -->
 			<h3>Find New Interests</h3>
 			<div id="new">
 				<p>Select New Interests to Add</p>
-				<div class="inputs">
-					<input type="checkbox" name="delete" value="Media"> Media<br/>
-					<input type="checkbox" name="delete" value="Acadmic" > Academic<br/>
-					<input type="checkbox" name="delete" value="Cultural"> Cultural<br/>
-				</div>
+				<div class="inputs" id="newArea"></div>
 			</div>
 			<h2 id="clear">Not To Be Seen</h2>
 		</div>
