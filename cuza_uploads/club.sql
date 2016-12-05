@@ -49,17 +49,19 @@ DROP TABLE IF EXISTS `meetings`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `meetings` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `title` varchar(45) DEFAULT NULL,
-  `Month` varchar(45) DEFAULT NULL,
+  `title` varchar(200) DEFAULT NULL,
+  `Month` varchar(200) DEFAULT NULL,
   `date` int(11) DEFAULT NULL,
   `year` int(11) DEFAULT NULL,
   `club_id` int(11) NOT NULL,
-  `location` varchar(45) DEFAULT NULL,
-  `description` varchar(45) DEFAULT NULL,
+  `location` varchar(200) DEFAULT NULL,
+  `description` varchar(500) DEFAULT NULL,
+  `time` varchar(45) DEFAULT NULL,
+  `bio` varchar(600) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `club_id_idx` (`club_id`),
   CONSTRAINT `club_id` FOREIGN KEY (`club_id`) REFERENCES `clubs` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -68,6 +70,7 @@ CREATE TABLE `meetings` (
 
 LOCK TABLES `meetings` WRITE;
 /*!40000 ALTER TABLE `meetings` DISABLE KEYS */;
+INSERT INTO `meetings` VALUES (1,'ASU KickBack','Feb',10,2017,21,'Myers Quad','Food, Fun and Dance. Come out and get to meet people both new and old!','5pm',NULL),(2,'Africa Nite','Mar',23,2017,21,'Fine Arts','A night of culture rooted in African Traditions. Come out and enjoy a play, food, and dance.','8pm',NULL),(3,'Africa Nite Auditions','Jan',27,2017,21,'Tate Grand Hall	','If you would like to dance during Africa Nite, come out to audition and learn new moves. Begins at 8! Please be ontime.','8pm',NULL),(4,'Software Meeting','Jan - May',9,2017,48,'Boyd 328','Meeting weekly on Mondays to develop a project for a competition','6pm',NULL),(5,'Game Dev','Mar',10,2017,48,'Boyd 207','Every monday for the month of march, will be teaching about game development','5pm',NULL),(6,'Navs Devotional and Study','Jan - Mar',10,2017,26,'PJ North Aud.','Every tuesday nite starting Jan. 10, join us for fellowship, Bible Study and Snacks!','730pm',NULL),(7,'MLK Retreat','Jan',13,2017,26,'TBA','MLK Retreat for MLK weekend(13-15)','8am',NULL),(8,'LGBT Information Session','Feb ',20,2017,32,'Memorial Hall','Learn about issues LGBT community faces and how you can get involved','5pm',NULL),(9,'Blue v Red Mock Debate','Mar',15,2017,43,'Journalism 5th Floor','Debate between Dem. and Reb. ','7pm',NULL),(10,'Blue v Red Mock Debate Try-outs','Feb ',1,2017,43,'Journalism','If you like to participate in the upcoming debate, come out to audition! Please show up on time','7pm',NULL),(11,'Blue v Red - Practice','Feb ',15,2017,43,'Journalism','Practice for the upcoming debate. This is a closed practice. Only those participating may show!','7pm',NULL),(12,'PWC Informal','Mar',17,2017,46,'MLC 238','Learn out what opportunities PWC has','530pm',NULL),(13,'Interview Speed Rounds','Feb',16,2017,46,'MLC TBA','Best Practices to get impress at your interview and land any job!','6pm',NULL),(14,'TryOuts','Jan',27,2017,11,'TBA','Try out to join our rowing Team','7pm',NULL),(15,'Ramsey Arms Workout','Feb',10,2017,11,'Ramsey - Upstairs','We all know how important strong arms for rowing. This practice is optional, but highly encouraged to build arm strength. We will be upstairs using the rowing machines. Hope to see you there!','7pm',NULL),(16,'Saving Our Planet','May ',1,2017,20,'TBA','Discussing Global Warming around the world, its effects and what we can do about it','6pm',NULL),(17,'Earth Day ','Apr',22,2017,20,'MLC TBA','Will be showing a film about our Earth! Film is TBA','6pm',NULL),(18,'Knit-a-thon','Apr',6,2017,5,'Myers','All day (or as long as you can stay) knit-a-thon. Who ever knits the most will win a prize! ','12pm',NULL),(19,'AdClub Information','Jan ',20,2017,34,'Journalism','Learn more about our club','6pm',NULL),(20,'AdClub - Advertise and Media','Apr',8,2017,34,'Journalism','Where is media and advertisment going in today\'s digital world? Come join the discussion','6pm',NULL),(21,'Camp Out','Mar',11,2017,50,'TBA','Got what it takes to sleep with nature! Come join us for our annual camp nite and enjoy the great outdoors!','7pm',NULL);
 /*!40000 ALTER TABLE `meetings` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -93,7 +96,7 @@ CREATE TABLE `student_club` (
 
 LOCK TABLES `student_club` WRITE;
 /*!40000 ALTER TABLE `student_club` DISABLE KEYS */;
-INSERT INTO `student_club` VALUES (1,2,'Navigators - Navs',26),(2,2,'African Student Union - ASU',21);
+INSERT INTO `student_club` VALUES (1,2,'Navigators - Navs',26),(2,2,'African Student Union - ASU',21),(3,1,'Navigators - Navs',26);
 /*!40000 ALTER TABLE `student_club` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -110,7 +113,7 @@ CREATE TABLE `student_interest` (
   `interest` varchar(45) DEFAULT NULL,
   `id_interest` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`key`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -119,7 +122,7 @@ CREATE TABLE `student_interest` (
 
 LOCK TABLES `student_interest` WRITE;
 /*!40000 ALTER TABLE `student_interest` DISABLE KEYS */;
-INSERT INTO `student_interest` VALUES (1,2,'Arts and Design','2'),(2,2,'Cultural and Ethnic','5'),(3,2,'Faith','6'),(4,2,'Technology and Engineering','14');
+INSERT INTO `student_interest` VALUES (1,2,'Arts and Design','2'),(2,2,'Cultural and Ethnic','5'),(3,2,'Faith','6'),(4,2,'Technology and Engineering','14'),(5,1,'Faith','6');
 /*!40000 ALTER TABLE `student_interest` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -209,4 +212,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-12-03 13:27:08
+-- Dump completed on 2016-12-05 10:27:25
