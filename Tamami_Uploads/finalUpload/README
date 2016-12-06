@@ -1,0 +1,25 @@
+Author: Tamami Lillis
+
+Task: Create Database
+      Create fully functioning login and create user page using: 
+        HTML
+        CSS
+        Ajax
+        JQuery
+        Servlet
+        MySQL Request
+        
+Files I made Changes to
+  index.html
+  style.css
+  index2.js
+  animate.js
+  Servlet.java
+  PersistImpl.java
+  DbAccessImpl.java
+  
+  *The rest of the files are the same as Cuza's  project.
+  Also included my zip file of the project and database for testing purposes. 
+  
+  
+  
