@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Athens Student Involvement</title>
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  
+	<!-- Imports for navigation bar -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+	
+    <!-- Imported jquery -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js" type="text/javascript"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js" type="text/javascript"></script>
+	<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+
+	<!-- Imports for Html style -->
+	<link rel='stylesheet prefetch' href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900'>
+	<link rel='stylesheet prefetch' href='http://fonts.googleapis.com/css?family=Montserrat:400,700'>
+	<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
+
+    <!-- Css for the Page  -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
+    
+    <!-- javascript for the page.  -->
+ 	 <script src="scripts/jquery-3.1.1.js"></script>
+  	<script src="js/index2.js"></script>
+
+  
+    
+
+  
+</head>
+
+<body>
+	<!-- Navigation bar for the page  -->
+   <nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+		
+			<!-- Nav Bar Header: Links to Profile Page -->
+			<div class="navbar-header">
+				<a href="#" class="navbar-brand">Athens Student Involvement</a>
+			</div>
+			
+			<!-- Nav Bar Items -->
+			<div>
+				<ul class="nav navbar-nav">
+					
+					
+               
+                </ul>
+			</div>
+			
+		</div>
+	</nav>
+  
+  
+<div class="container">
+  <div class="info">
+    <h1> Login</h1>
+  </div>
+</div>
+
+
+<div class="form">
+
+     
+  <div class="thumbnail"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/UGA_logo.svg/2000px-UGA_logo.svg.png"/></div>
+    
+<!--- Start of register form -->
+  <form id = "register-form" class="register-form" method = "GET">
+  
+  	    
+    <input type="text" id= "firstname" name = "firstname" placeholder="first name"/>
+    <input type="text" id= "lastname" name = "lastname" placeholder="last name"/>
+    <input type="text" id= "year" name = "year" placeholder="year"/>
+    <input type="text" id= "gender" name = "gender" placeholder="gender"/>
+    <input type="text" id= "username" name = "username" placeholder="username"/>
+    <input type="password" id= "password" name = "password" placeholder="password"/>
+    <input type="text" id= "email" name = "email" placeholder="email address"/>
+    
+    <input type="submit" class="button" value="Sign Up">
+     <br>
+    <p id ="message"></p>
+    
+    <p class="message">Already registered? <a href="#">Sign In</a></p>
+   
+  </form>
+    
+<!--- Start of login form --> 
+    <form id ="login-form" class="login-form" method = "GET" action = "Servlet">
+  
+  	<p id = "message"></p>    
+    <input type="text" id= "user" name = "user" placeholder="username"/>
+    <input type="password" id= "pass" name = "pass" placeholder="password"/>
+    
+    
+    <input type="submit" id = "register" class="button" value="log in">
+    <br>
+    <p id = "message1"></p>
+    <p id ="p">
+    
+    <p class="message">Don't have an Account? <a href="#">Click Here</a></p>
+    
+  </form>
+    
+    
+  
+</div>
+
+ <!--- animation for switching from one page to another. -->    
+  <script src="scripts/jquery-3.1.1.js"></script>
+  <script src="js/animation.js"></script>
+
+</body>
+</html>
