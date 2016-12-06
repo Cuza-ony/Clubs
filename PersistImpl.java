@@ -1,3 +1,27 @@
+public ResultSet retrieve(Connection con, String query) {
+		ResultSet rset = null;
+		try {
+			System.out.println(query);
+			Statement stmt = (Statement) con.createStatement();
+			rset = stmt.executeQuery(query);
+			if(rset.next() == false)
+			{
+
+				rset = null;
+				return rset;
+			}
+			
+			return rset;
+		} catch (SQLException e) {
+			e.printStackTrace();
+			return rset;
+		}
+	}//ResultSet
+
+
+
+
+
 /*
  * Builds the Query
  */
