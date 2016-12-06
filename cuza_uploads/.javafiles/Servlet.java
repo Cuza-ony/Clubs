@@ -70,6 +70,8 @@ public class Servlet extends HttpServlet {
 			 query += "{.split}";
 			 
 			 //find user's events
+			 query += persist.userEventList(usernameCopy);
+			 query += "{.split}";
 			 
 			 //output results
 			 response.setContentType("text/html");
