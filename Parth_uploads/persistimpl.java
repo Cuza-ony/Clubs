@@ -71,7 +71,7 @@ public class PersistImpl {
 	
 	/*Get user's events and create check-box form*/
 	public String userEventList(String username){
-		String query = "SELECT student_club.club, meetings.title, meetings.description FROM student_club INNER JOIN `meetings` on student_club.id_club = meetings.club_id where username='"+username.toLowerCase()+"'";
+		String query = "SELECT student_club.club, meetings.title, meetings.Month, meetings.date, meetings.year FROM student_club INNER JOIN `meetings` on student_club.id_club = meetings.club_id where username='"+username.toLowerCase()+"'";
 		ResultSet rset = db.retrieve(con, query);
 		return logic.createFormCheckBox(rset);
 	}
