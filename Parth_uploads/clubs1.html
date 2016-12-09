@@ -15,7 +15,7 @@
 
 <!-- Custom JQuery and JS Scripts -->
 <script src="jquery.js"></script>
-<script src="interests.js"></script>
+<script src="clubs1.js"></script>
 
 <!-- for drop down -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
@@ -52,8 +52,8 @@
 					<li class="dropdown active">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Update <span class="caret"></span></a>
 						<ul class="dropdown-menu">
-							<li class="active"><a href="interests.html">Interests</a></li>
-							<li><a href="clubs1.html">Clubs</a></li>
+							<li><a href="interests.html">Interests</a></li>
+							<li class="active"><a href="clubs1.html">Clubs</a></li>
 							<li><a href="events.html">Events</a></li>
 						</ul>
 					</li>
@@ -70,35 +70,30 @@
 	
 	<!-- Main Header -->
 	<div id="header">
-		<h1><span id="about">Your </span><span id="us">Interests</span></h1>
+		<h1><span id="about">Your </span><span id="us">Clubs</span></h1>
 	</div>
 	<hr id="links-hor">
 	
-	<!-- Hold Interest Contents -->
+	<!-- Hold Clubs Contents -->
 	<form action="Servlet" method="GET">
-		<div id="interests">
-			<!-- Current Interests -->
-			<h3>Current Interests</h3>
+		<div id="clubs">
+			<!-- Current Clubs -->
+			<h3>Current Clubs</h3>
 			<div id="curr">
-				<p>Select Current Interests to Delete</p>
-				<div class="inputs" id="currArea"></div>
+				<p>Select Current Clubs to Delete</p>
+				<div class="inputs" id="currArea1"></div>
 			</div>
-			<!-- list of all interests -->
-			<h3>Find New Interests</h3>
+			<!-- list of all Clubs -->
+			<h3>Find New Clubs</h3>
 			<div id="new">
-				<p>Select New Interests to Add</p>
-				<div class="inputs" id="newArea"></div>
+				<p>Select New Clubs to Add</p>
+				<div class="inputs" id="newArea1"></div>
 			</div>
 			<h2 id="clear">Not To Be Seen</h2>
 		</div>
 		<input type="submit" value="Submit" id="submitButton">
 	</form>
 	
-
-	
-	
 </body>
 </html>
-
-
 
